@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        Londres
+    </title>
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link href="../css/baseapp.min.css" rel="stylesheet">
+    <link href="../css/home-temporal.css" rel="stylesheet">
+    <link href="../css/chat.css" rel="stylesheet">
+
+    <!-- FX -->
+    <link href="../css/home-v052020.min.css" rel="stylesheet">
+    <link href="../css/listo-viajar.min.css" rel="stylesheet">
+
+
+
+
+</head>
+
+<body>
+
+    <div id="contenedor-menu-destinos" class="animated">
+
+        <a id="close_destinations">
+            <div class="icons_destinations icon_close_destinations">x</div>
+        </a>
+    </div>
+    <!-- //menu destinations -->
+    <style>
+        .h_bq1 {
+            font-family: 'Arimo', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            background-image: linear-gradient(100deg, #000000, #1546a0);
+            color: #fff;
+            height: 50px;
+            padding: 0 60px;
+            text-align: center;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .menu {
+                background-color: #ffffff;
+                padding: 0 10px 0 10px!important;
+                height: 78px;
+                font-size: 16px;
+            }
+        }
+        
+        .cardPresentacion {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+        }
+    </style>
+    <div class="h_bq1">
+        <div class="item_h_bq1" style="float: left;">
+            <a title="Tipo de cambio" href="../index.html">
+               Programacion Web: <strong>Brenda Berenice Villegas Rodriguez</strong> 
+            </a>
+        </div>
+
+
+    </div>
+    <div style="float: right;">
+        <div class="item_h_bq1 logged-out" style="display: none;">
+            <a title="Tipo de cambio" data-toggle="modal" data-target="#ingresar">
+                <i class="material-icons">home</i> Ingresar
+            </a>
+        </div>
+        <div class="item_h_bq1 logged-out" style="display: none;">
+            <a title="Tipo de cambio" data-toggle="modal" data-target="#registrar">
+                <i class="material-icons text-center">person_add_alt_1</i> Registrar
+            </a>
+        </div>
+        <div class="item_h_bq1 logged-in" style="display: none;">
+            <a title="Tipo de cambio" id="salir">
+                <i class="material-icons text-center">power_settings_new</i>Cerrar sesiòn
+            </a>
+        </div>
+    </div>
+    <div class="menu">
+        <div id="env_menu">
+
+
+            <div id="icon_mobile_destinos" class="animated">
+                <div class="container">
+                    <img class="lazyload" data-src="https://www.megatravel.com.mx//img/elements/menu-principal/icono-brujula-01.png" alt="Destinos" title="Destinos">
+                </div>
+            </div>
+
+            <a href="#" id="logo" title="Programacion Web">
+                <img class="lazyload" src="../logo.png" id="blue" alt="">
+            </a>
+
+            <div id="icon_mobile" class="animated">
+                <div class="container">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div id="dinamic_menu" class="animated bounceInDown">
+                <a id="close_menu_mobile">
+                    <div class="icons_destinations icon_close_destinations"></div>
+                </a>
+                <a href="#" id="logo_mobile" title="Mega Travel">
+                    <img id="white_mobile" src="../logo.jpg" width="30px"></a>
+
+                <div class="menu_items" style="float: right;">
+
+                    <a class="bor_right_black navinicio" href="#">
+                        <div class="icons icon-iniciomovile"></div>
+                        <div class="option_menu"><span>INICIO</span></div>
+
+                        <div id="tc_movile">
+                            <div class="icons icon-tipoc"></div>MXN <span class="tcnow"></span></div>
+                    </a>
+
+                </div>
+                <!-- //menu_items -->
+
+
+            </div>
+        </div>
+        <!-- //env_menu -->
+    </div>
+    <!-- //menu -->
+
+    <br><br>
+    <div class="container">
+        <div class="row my-3">
+            <div class="card  col-6">
+                <div class="card-header">
+                    Agrega a tu acompañante
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Ingresa los datos de tu(s) acompañante(s) de viaje.</h5>
+                    <small>♥ ¡Bienvenido!</small><small id="datosCliente"></small>
+                    <p> Inglaterra / Londres </p>
+                    <img src="../img/flondres.png" height="50px">
+
+                </div>
+                <input type="text" id="nombre" class="form-control input-sm" placeholder="Nombre(s)" aria-label="Username" aria-describedby="basic-addon1" required>
+                <br>
+                <input type="text" id="apellido" class="form-control input-sm" placeholder="Apellidos" aria-label="Username" aria-describedby="basic-addon1" required>
+                <br>
+                <input type="text" id="fecha" class="form-control input-sm" placeholder="Fecha de nacimiento" aria-label="Username" aria-describedby="basic-addon1" required>
+                <button type="button" id="editar" class="btn btn-success my-3" onclick="guardar()">Guardar</button>
+
+            </div>
+            <br>
+            <style>
+                .infoScroll {
+                    height: 500px;
+                    width: 100%;
+                    overflow: scroll;
+                }
+            </style>
+            <div class="card col-6 infoScroll ">
+                <div class="card-body">
+                    <h5 class="card-title">Aqui aparecen tus personas seleccionadas</h5>
+                    <p class="card-text">Viajero(s)</p>
+                    <div id="datosPerson">
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="text-center">Descripción del TOUR</h5>
+                    <div id="descripcionLondres">
+                        <br>
+                        <div class="center" style="text-align: center;">
+                            <img src="../img/londres.jpeg" height="250px">
+                            <br>
+                            <br>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    <div class="container-fluid">
+        <div id="app">
+            <div class="styles_wrapper__d7uG7">
+                <div id="chat-widget-container" class="styles_widget__2g5UX">
+                    <div>
+                        <main class="styles_widgetContainer__1GpQ0">
+                            <div class="styles_header__1c59U">
+                                <div class="styles_closeIconMobile__2YWt8" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+                                    <path d="M6.4 6.4l7.2 7.2m0-7.2l-7.2 7.2" fill="none" stroke="currentColor"
+                                        stroke-linecap="square" stroke-width="2"></path>
+                                </svg></div>
+                                <div class="styles_logoWrapper__3V29E">
+                                    <div class="styles_logo__1ZE0j"><img src="../logo.png" width="20xp" alt="company_logo"></div>
+                                </div>
+                            </div>
+
+                            <footer class="styles_footer__1DjbU">
+                                <div class="styles_footer__2XYQk">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="styles_footerLink__17d3m">
+                                        <p class="styles_companyName__1s5d9">Brenda</p>
+                                    </a>
+                                </div>
+                            </footer>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="app" style="display: none;">
+            <div class="styles_wrapper__d7uG7">
+                <div id="chat-widget-container" class="styles_widget__2g5UX"></div>
+                <div id="escribenos" class="writing">👋 ¿Cómo podemos ayudarte? 🤗</div>
+                <span class="imgchat" id="x"></span>
+            </div>
+        </div>
+
+
+        <!-- row  -->
+        <div class="row align-items-center ancfoot">
+            <!-- footer -->
+            <div class="col-12" id="footer">
+                <!-- row  -->
+                <div class="row align-items-start justify-content-md-center" id="footer_blq1">
+
+                    <!-- redes -->
+                    <div class="d-lg-none d-md-none d-sm-none d-none d-xl-block col-xl-2 cont_redes_soc">
+                        <p>La excelencia del servicio se basa en su exclusividad.</p>
+                    </div>
+                    <!-- //redes -->
+
+                    <!-- bloque destinos -->
+                    <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-12" class="cont_destinos">
+                        <div class="container">
+                            <p>¡Diseña el viajes a tu medida!
+                                <br> Cada uno de nuestros viajes surge a partir de escuchar y entender lo que quiere el viajero, en BRENDA AIR ofrecemos los máximos conocimientos para organizar tu viaje.
+                                <br> Nuestra creatividad, flexibilidad y el máximo empeño por los pequeños detalles determinará que tu experiencia sea única. Cada uno de nuestros guías especializados, nuestra red de contactos locales y el afán por crear
+                                algo único y exclusivo, harán de tu viaje algo inolvidable.</p>
+                            <!-- //row -->
+                        </div>
+                        <!-- //container -->
+                    </div>
+                    <!-- // bloque destinos -->
+                </div>
+                <!--// row  -->
+                <!-- row  -->
+
+                <div class="row align-items-start justify-content-md-center" id="footer_blq2">
+                    <!-- horario -->
+                    <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-12 text-left cont_redes_soc">
+                        <p>BRENDA AIR ♥ Donde viajar es vivir ♥</p>
+                    </div>
+                    <!-- bloque destinos -->
+                    <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-12 " class="cont_destinos ">
+                        <div class="container ">
+                            <p>© 2021. Copyright BRENDA AIR® todos los derechos reservados- Página desarrollada por Brenda Villegas R.</p>
+                            <!-- //container -->
+                        </div>
+                        <!-- // bloque destinos -->
+                    </div>
+                    <!--// row -->
+                    <!-- row  -->
+                    <div class="row align-items-start justify-content-md-center " id="footer_blq3 ">
+                        <!-- copy -->
+
+                    </div>
+                </div>
+
+
+
+
+                <!--// row  -->
+            </div>
+            <!-- //Footer -->
+        </div>
+        <!-- // row  -->
+    </div>
+    <!-- //container-fluid -->
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="registrar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="registrar-form">
+                        <div class="form-group">
+                            <input type="text" id="registrar-email" class="form-control" placeholder="Email" required>
+                            <br>
+                            <input type="password" id="registrar-password" class="form-control" placeholder="Password" required>
+                            <br>
+                            <button type="submit" class="btn btn-primary">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="ingresar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="ingresar-form">
+                        <div class="form-group">
+                            <input type="text" id="ingresar-email" class="form-control" placeholder="Email" required>
+                            <br>
+                            <input type="password" id="ingresar-password" class="form-control" placeholder="Password" required>
+                            <br>
+                            <button type="submit" class="btn btn-primary btn-block my-2">Ingresar</button>
+                            <button type="button" class="btn btn-primary btn-block my-2" id="google">google</button>
+                            <button type="button" class="btn btn-primary btn-block" id="face">Facebook</button>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCD4jHJR_gK_PMPHfeaEuw9KHygZD67rLc",
+            authDomain: "agencia-a7af7.firebaseapp.com",
+            projectId: "agencia-a7af7",
+            storageBucket: "agencia-a7af7.appspot.com",
+            messagingSenderId: "676244264288",
+            appId: "1:676244264288:web:d9a58fe59dbb7949a8ba05"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+    </script>
+
+
+
+    <script type="text/javascript " src="../js/main.js"></script>
+
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js "></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="https://www.megatravel.com.mx/js/base-app.js "></script>
+    <script type="text/javascript " src="https://www.megatravel.com.mx/js/chat.js "></script>
+    <!--<script type="text/javascript " src="https://www.megatravel.com.mx/js/jquery.ui.touch-punch.min.js "></script>-->
+
+    <script type="text/javascript " src="../js/app.js "></script>
+
+    <script src="mundo/paris.js"></script>
+
+
+
+    <script>
+    </script>
+</body>
+
+</html>

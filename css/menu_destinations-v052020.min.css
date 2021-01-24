@@ -1,0 +1,400 @@
+#contenedor-menu-destinos {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 50px 10px;
+    text-align: center;
+    background-color: #001e42;
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    position: fixed;
+    overflow: auto;
+    display: none
+}
+
+.contenedor_dest {
+    max-width: 1015px;
+    display: inline-block;
+    text-align: center;
+    margin: 0
+}
+
+#morientemovil {
+    display: none
+}
+
+#morientedesk {
+    display: block
+}
+
+.title-menu-destinos {
+    width: 100%;
+    max-width: 410px;
+    font-family: 'Arimo', sans-serif;
+    letter-spacing: -1px;
+    margin: 0 auto 50px auto;
+    color: #fff;
+    text-align: left;
+    display: block
+}
+
+.title-menu-destinos div {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    margin: 0 0 0 0;
+    padding: 0 19px;
+    line-height: 100%;
+    display: inline-block;
+    border-left: 6px solid #1ea0da;
+    text-align: left
+}
+
+.title-menu-destinos p {
+    font-size: 20px;
+    color: #fff;
+    margin: 2px 0 0 0;
+    padding: 0;
+    line-height: 100%
+}
+
+.contenedor_dest .bcomplete {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 0 3% 0 3%;
+    width: 33%;
+    display: block;
+    float: left;
+    vertical-align: top;
+    text-align: left;
+    border-right: 1px solid #1f4675
+}
+
+.contenedor_dest .bmedian {
+    font-family: 'Arimo', sans-serif;
+    font-weight: 700;
+    margin: 0 auto 0 auto;
+    padding: 0 3% 0 3%;
+    width: 33%;
+    display: block;
+    float: left;
+    vertical-align: top;
+    text-align: left
+}
+
+.contenedor_dest .minmargin {
+    margin-bottom: 20px
+}
+
+.contenedor_dest .supborder {
+    border-top: solid 1px #1f4675;
+    padding-top: 20px
+}
+
+.contenedor_dest .bline {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    width: 2px;
+    display: block;
+    float: left;
+    vertical-align: top;
+    text-align: left;
+    background-color: pink
+}
+
+.contenedor_dest li {
+    width: auto;
+    font-size: 16px;
+    margin: 0 0 25px 0;
+    padding: 0;
+    display: block
+}
+
+.item_smargin {
+    margin: 0!important
+}
+
+.contenedor_dest li span {
+    margin: 0 0 0 10px;
+    padding: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 73%;
+    line-height: 100%
+}
+
+.contenedor_dest li a {
+    color: #fff;
+    display: block
+}
+
+.contenedor_dest li a:hover {
+    color: #1ea0da
+}
+
+.icons_destinations {
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.icons_destinations.icon_menu_europa {
+    width: 44px;
+    height: 43px;
+    background-position: -18px -15px
+}
+
+.icons_destinations.icon_menu_playas {
+    width: 44px;
+    height: 43px;
+    background-position: -18px -310px
+}
+
+.icons_destinations.icon_menu_sudamerica {
+    width: 44px;
+    height: 43px;
+    background-position: -152px -86px
+}
+
+.icons_destinations.icon_menu_usa {
+    width: 44px;
+    height: 43px;
+    background-position: -82px -16px
+}
+
+.icons_destinations.icon_menu_centroamerica {
+    width: 44px;
+    height: 43px;
+    background-position: -217px -14px
+}
+
+.icons_destinations.icon_menu_caribe {
+    width: 44px;
+    height: 43px;
+    background-position: -285px -15px
+}
+
+.icons_destinations.icon_menu_moriente {
+    width: 44px;
+    height: 43px;
+    background-position: -19px -153px
+}
+
+.icons_destinations.icon_menu_canada {
+    width: 44px;
+    height: 43px;
+    background-position: -353px -16px
+}
+
+.icons_destinations.icon_menu_asia {
+    width: 44px;
+    height: 43px;
+    background-position: -11px -86px
+}
+
+.icons_destinations.icon_menu_mexico {
+    width: 44px;
+    height: 43px;
+    background-position: -354px -84px
+}
+
+.icons_destinations.icon_menu_pacifico {
+    width: 44px;
+    height: 43px;
+    background-position: -286px -85px
+}
+
+.icons_destinations.icon_menu_africa {
+    width: 44px;
+    height: 43px;
+    background-position: -79px -85px
+}
+
+.icons_destinations.icon_menu_cruceros {
+    width: 44px;
+    height: 43px;
+    background-position: -150px -16px
+}
+
+.icons_destinations.icon_menu_especiales {
+    width: 44px;
+    height: 43px;
+    background-position: -350px -153px
+}
+
+.icons_destinations.icon_menu_exoticos {
+    width: 44px;
+    height: 43px;
+    background-position: -287px -153px
+}
+
+.icons_destinations.icon_menu_lunamiel {
+    width: 44px;
+    height: 43px;
+    background-position: -86px -152px
+}
+
+.icons_destinations.icon_menu_quince {
+    width: 44px;
+    height: 43px;
+    background-position: -219px -86px
+}
+
+.icons_destinations.icon_menu_dcancun {
+    width: 44px;
+    height: 43px;
+    background-position: -157px -219px
+}
+
+.icons_destinations.icon_menu_mverano {
+    width: 44px;
+    height: 43px;
+    background-position: -84px -270px
+}
+
+.icons_destinations.icon_menu_minvierno {
+    width: 44px;
+    height: 43px;
+    background-position: -217px -263px
+}
+
+.icons_destinations.icon_menu_siganio {
+    width: 44px;
+    height: 43px;
+    background-position: -15px -268px
+}
+
+.icons_destinations.icon_menu_semsanta {
+    width: 44px;
+    height: 43px;
+    background-position: -155px -267px
+}
+
+.icons_destinations.icon_menu_mtv {
+    width: 44px;
+    height: 43px;
+    background-position: -288px -219px
+}
+
+.icons_destinations.icon_menu_mtraveler {
+    width: 44px;
+    height: 43px;
+    background-position: -215px -220px
+}
+
+.icons_destinations.icon_menu_juvi {
+    width: 44px;
+    height: 43px;
+    background-position: -150px -155px
+}
+
+.icons_destinations.icon_menu_grupos {
+    width: 44px;
+    height: 43px;
+    background-position: -219px -155px
+}
+
+.icons_destinations.icon_close_destinations {
+    width: 52px;
+    height: 52px;
+    background-position: -19px -215px
+}
+
+#close_destinations {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    right: 30px;
+    top: 20px
+}
+
+#contenedor-menu-destinos::-webkit-scrollbar {
+    width: 7px
+}
+
+#contenedor-menu-destinos::-webkit-scrollbar-track {
+    background: #001e42
+}
+
+#contenedor-menu-destinos::-webkit-scrollbar-thumb {
+    background: #1ea0da
+}
+
+#contenedor-menu-destinos::-webkit-scrollbar-thumb:hover {
+    background: #555
+}
+
+@media screen and (max-width: 1030px) {
+    .contenedor_dest {
+        width: 90%;
+        max-width: 1015px
+    }
+    .contenedor_dest li span {
+        width: 70%
+    }
+    .item_smargin {
+        margin: 0 0 40px 0!important
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .contenedor_dest {
+        width: auto;
+        max-width: auto
+    }
+    .contenedor_dest .bcomplete {
+        width: 39%;
+        display: inline-block;
+        float: none
+    }
+    .contenedor_dest .bmedian {
+        width: 39%;
+        display: inline-block;
+        float: none;
+        border-right: 1px solid #1f4675
+    }
+    .b2 {
+        border-right: none!important
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #morientemovil {
+        display: block
+    }
+    #morientedesk {
+        display: none
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .contenedor_dest .bcomplete {
+        width: 75%;
+        border: none;
+        padding: 0 0 0 0
+    }
+    .contenedor_dest .bmedian {
+        width: 75%;
+        border: none;
+        padding: 0 0 0 0
+    }
+    .contenedor_dest li {
+        margin: 0 0 20px 0;
+        padding: 0 0 20px 0;
+        border-bottom: solid 1px #1f4675
+    }
+    .item_smargin {
+        margin: 0 0 20px 0!important
+    }
+    .contenedor_dest .supborder {
+        border-top: none;
+        padding-top: 0
+    }
+}

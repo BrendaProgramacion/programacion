@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+        Agencia
+    </title>
+    <!-- icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link href="css/baseapp.min.css" rel="stylesheet">
+    <link href="css/home-temporal.css" rel="stylesheet">
+    <link href="css/chat.css" rel="stylesheet">
+
+    <!-- FX -->
+    <link href="css/home-v052020.min.css" rel="stylesheet">
+    <link href="css/listo-viajar.min.css" rel="stylesheet">
+
+
+    <!-- Icon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="https://www.megatravel.com.mx//apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://www.megatravel.com.mx//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://www.megatravel.com.mx//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://www.megatravel.com.mx//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://www.megatravel.com.mx//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://www.megatravel.com.mx//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://www.megatravel.com.mx//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://www.megatravel.com.mx//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.megatravel.com.mx//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://www.megatravel.com.mx//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.megatravel.com.mx//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://www.megatravel.com.mx//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.megatravel.com.mx//favicon-16x16.png">
+
+
+</head>
+
+<body>
+
+    <div id="contenedor-menu-destinos" class="animated">
+
+        <a id="close_destinations">
+            <div class="icons_destinations icon_close_destinations">x</div>
+        </a>
+    </div>
+    <!-- //menu destinations -->
+    <style>
+        .h_bq1 {
+            font-family: 'Arimo', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            background-image: linear-gradient(100deg, #000000, #1546a0);
+            color: #fff;
+            height: 50px;
+            padding: 0 60px;
+            text-align: center;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .menu {
+                background-color: #ffffff;
+                padding: 0 10px 0 10px!important;
+                height: 78px;
+                font-size: 16px;
+            }
+        }
+        
+        .cardPresentacion {
+            width: 100%;
+            max-width: 1200px;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: auto;
+        }
+    </style>
+    <div class="h_bq1">
+        <div class="item_h_bq1" style="float: left;">
+            <a title="Tipo de cambio" href="index.html">
+               Programacion Web: <strong>Brenda Berenice Villegas Rodriguez</strong> 
+            </a>
+        </div>
+
+        <div style="float: right;">
+            <div class="item_h_bq1 logged-out">
+                <a title="Tipo de cambio" data-toggle="modal" data-target="#ingresar">
+                    <i class="material-icons">home</i> Ingresar
+                </a>
+            </div>
+            <div class="item_h_bq1 logged-out">
+                <a title="Tipo de cambio" data-toggle="modal" data-target="#registrar">
+                    <i class="material-icons text-center">person_add_alt_1</i> Registrar
+                </a>
+            </div>
+            <div class="item_h_bq1 logged-in" style="display: none;">
+                <a title="Tipo de cambio" id="salir">
+                    <i class="material-icons text-center">power_settings_new</i>Cerrar sesiòn
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div id="env_menu">
+
+
+            <div id="icon_mobile_destinos" class="animated">
+                <div class="container">
+                    <img class="lazyload" data-src="https://www.megatravel.com.mx//img/elements/menu-principal/icono-brujula-01.png" alt="Destinos" title="Destinos">
+                </div>
+            </div>
+
+            <a href="#" id="logo" title="Programacion Web">
+                <img class="lazyload" id="blue" data-src="logo.png" alt="Brenda :)">
+            </a>
+
+            <div id="icon_mobile" class="animated">
+                <div class="container">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <div id="dinamic_menu" class="animated bounceInDown">
+                <a id="close_menu_mobile">
+                    <div class="icons_destinations icon_close_destinations"></div>
+                </a>
+                <a href="#" id="logo_mobile" title="Mega Travel">
+                    <img id="white_mobile" src="logo.jpg" width="30px"></a>
+
+                <div class="menu_items" style="float: right;">
+
+                    <a class="bor_right_black navinicio" href="#">
+                        <div class="icons icon-iniciomovile"></div>
+                        <div class="option_menu"><span>INICIO</span></div>
+
+                        <div id="tc_movile">
+                            <div class="icons icon-tipoc"></div>MXN <span class="tcnow"></span></div>
+                    </a>
+
+
+                    <a class="bor_right_black" id="lnk_destinations" href="#">
+
+                        <i class="material-icons">airplanemode_active</i>
+                        <div class="option_menu"><span>NUESTROS</span> <br>DESTINOS</div>
+                    </a>
+
+                    <a class="bor_right_black" href="#">
+                        <i class="material-icons">local_offer</i>
+                        <div class="option_menu"><span>OFERTAS </span> <br>Y PROMOCIONES</div>
+                    </a>
+
+                    <a class="nav-link" href="#">
+                        <i class="material-icons" style="margin-top: -50px;">assignment_ind</i>
+                        <div class="option_menu"><span>CONTACTO</span></div>
+                    </a>
+
+                </div>
+                <!-- //menu_items -->
+
+
+
+
+            </div>
+        </div>
+        <!-- //env_menu -->
+    </div>
+    <!-- //menu -->
+
+    <br><br>
+    <div class="container">
+        <div class="row my-3">
+            <div class="card  col-6">
+                <div class="card-header">
+                    Seleecciona personas
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Aqui agrega las personas que te acompañan en tu viaje!</h5>
+                    <p class="card-text">Descripcion del TUR</p>
+                    <small>Bienbenido! </small><small id="datosCliente"></small>
+
+                </div>
+                <input type="text" id="nombre" class="form-control input-sm" placeholder="Nombre" aria-label="Username" aria-describedby="basic-addon1" required>
+                <br>
+                <input type="text" id="apellido" class="form-control input-sm" placeholder="Apellido Paterno" aria-label="Username" aria-describedby="basic-addon1" required>
+                <br>
+                <input type="text" id="fecha" class="form-control input-sm" placeholder="Fecha" aria-label="Username" aria-describedby="basic-addon1" required>
+                <button type="button" id="editar" class="btn btn-success my-3" onclick="guardar()">Guardar</button>
+
+            </div>
+            <br>
+            <style>
+                .infoScroll {
+                    height: 500px;
+                    width: 100%;
+                    overflow: scroll;
+                }
+            </style>
+            <div class="card col-6 infoScroll ">
+                <div class="card-body">
+                    <h5 class="card-title">Aqui aparesen tus personas seleccionadas:</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <div id="datosPerson">
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid">
+
+
+
+
+
+
+
+
+
+        <div id="app">
+            <div class="styles_wrapper__d7uG7">
+                <div id="chat-widget-container" class="styles_widget__2g5UX">
+                    <div>
+                        <main class="styles_widgetContainer__1GpQ0">
+                            <div class="styles_header__1c59U">
+                                <div class="styles_closeIconMobile__2YWt8" role="button" tabindex="0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20">
+                                    <path d="M6.4 6.4l7.2 7.2m0-7.2l-7.2 7.2" fill="none" stroke="currentColor"
+                                        stroke-linecap="square" stroke-width="2"></path>
+                                </svg></div>
+                                <div class="styles_logoWrapper__3V29E">
+                                    <div class="styles_logo__1ZE0j"><img src="logo.png" width="20xp" alt="company_logo"></div>
+                                </div>
+                            </div>
+
+                            <footer class="styles_footer__1DjbU">
+                                <div class="styles_footer__2XYQk">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="styles_footerLink__17d3m">
+                                        <p class="styles_companyName__1s5d9">Brenda</p>
+                                    </a>
+                                </div>
+                            </footer>
+                        </main>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="app" style="display: none;">
+            <div class="styles_wrapper__d7uG7">
+                <div id="chat-widget-container" class="styles_widget__2g5UX"></div>
+                <div id="escribenos" class="writing">👋 ¿Cómo podemos ayudarte? 🤗</div>
+                <span class="imgchat" id="x"></span>
+            </div>
+        </div>
+
+
+        <!-- row  -->
+        <div class="row align-items-center ancfoot">
+            <!-- footer -->
+            <div class="col-12" id="footer">
+                <!-- row  -->
+                <div class="row align-items-start justify-content-md-center" id="footer_blq1">
+
+                    <!-- redes -->
+                    <div class="d-lg-none d-md-none d-sm-none d-none d-xl-block col-xl-2 cont_redes_soc">
+                        <img class="img-fluid logo_f lazyload" data-src="logo.png" width="30px" alt="Mega Travel">
+                        <div class="blqred">
+                            <br>Horario de servcio
+                            <br> Lun-Vie: 9am - 7pm
+                            <br>Sábados: 10am - 2pm
+                            <br><a href="mailto:&#105;&#110;&#102;&#111;&#64;&#109;&#101;&#103;&#97;&#116;&#114;&#97;&#118;&#101;&#108;&#46;&#99;&#111;&#109;&#46;&#109;&#120;" target="_blank">info@megatravel.com.mx</a>
+                        </div>
+                        <br>
+                        <ul>
+                            <li>
+                                <a href="https://www.facebook.com/megatravel" target="_blank"><img class="lazyload" data-src="https://www.megatravel.com.mx//img/elements/footer/facebook.png" alt="Facebook Mega Travel"></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/MegaTravel_MX" target="_blank"><img class="lazyload" data-src="https://www.megatravel.com.mx//img/elements/footer/twitter.png" alt="Twitter Mega Travel"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/mega_travel/?hl=es" target="_blank"><img class="lazyload" data-src="https://www.megatravel.com.mx//img/elements/footer/instagram.png" alt="Instagram Mega Travel"></a>
+                            </li>
+                            <li>
+                                <a href="https://www.youtube.com/channel/UC73NqxukQxkWo0Y7ufUUNVA" target="_blank"><img class="lazyload" data-src="https://www.megatravel.com.mx/img/elements/footer/youtube.png" alt="Youtube Mega Travel"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //redes -->
+
+                    <!-- bloque destinos -->
+                    <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-12" class="cont_destinos">
+                        <div class="container">
+                            <div class="row align-items-start justify-content-md-center">
+                                <div class="col-12 text-left">
+                                    <h2>UBICACIONES</h2>
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="blq_center">
+                                        <h4>CIUDAD DE MÉXICO</h4>
+                                        Av. Chapultepec No. 536 - PH, <br> Col. Roma - C.P. 06700 <br> Cuauhtémoc, Ciudad de México, <br>
+                                        <a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15051.232093445959!2d-99.174661!3d19.420699!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6619b121ba8742cc!2sMega+Travel!5e0!3m2!1ses-419!2s!4v1483558804187" target="_blank">[ Ver Mapa ]</a><br>
+                                        <!--Tel.: 01 (55) 5241 0333-->
+                                        Tel.: <a href="tel:+5552410333">55 5241 0333</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="blq_center">
+                                        <h4>GUADALAJARA</h4>
+                                        Simón Bolívar # 135-301, <br> Col. Obrera Centro, C.P. 44140 <br> Guadalajara, Jalisco. <br>
+                                        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.8942622657414!2d-103.37470604906251!3d20.67388038612398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae0fc8c23bd9%3A0x7a09e023235116be!2sCalle+Sim%C3%B3n+Bol%C3%ADvar+135%2C+Lafayette%2C+44160+Guadalajara%2C+Jal.!5e0!3m2!1ses!2smx!4v1536690035162"
+                                            target="_blank">[ Ver Mapa ]</a> <br>
+                                        <!--Tel.: 01 (33) 3630 4405-->
+                                        Tel.: <a href="tel:+523336304405">33 3630 4405</a><br>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="blq_center">
+                                        <h4>MONTERREY</h4>
+                                        Calle Hidalgo # 330 of. 719 <br> Col. Monterrey Centro C.P. 64000 <br> Monterrey, Nuevo León. <br>
+                                        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.1082891936867!2d-100.32216938512941!3d25.667704783679504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8662be243c00e0e7%3A0xaf4d2018770ae55e!2sof.%20719%2C%20Miguel%20Hidalgo%20330%2C%20Mirador%2C%2064070%20Monterrey%2C%20N.L.!5e0!3m2!1ses-419!2smx!4v1604088370949!5m2!1ses-419!2smx"
+                                            target="_blank">[ Ver Mapa ]</a> <br>
+                                        <!--Tel.: 01 (81) 8356 5789-->
+                                        Tel.: <a href="tel:+528183565789">81 8356 5789</a><br>
+                                    </div>
+                                </div>
+                                <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="blq_center">
+                                        <h4>MÉRIDA</h4>
+                                        Calle 12 x 11 No. 301.Fracc. Residencial <br> Cámara de Comercio Norte, C.P. 97133 <br> Mérida, Yucatán. <br>
+                                        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4557119134347!2d-89.59092374905768!3d21.014444285937444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5676d8c08ac3cb%3A0xd1ebfd47ac8af6c3!2sCalle+12+301%2C+Residencial+C%C3%A1mara+de+Comercio+Nte.%2C+97130+M%C3%A9rida%2C+Yuc.!5e0!3m2!1ses!2smx!4v1536690209410"
+                                            target="_blank">[ Ver Mapa ]</a> <br>
+                                        <!--Tel.: 01 (999) 944 6342-->
+                                        Tel.: <a href="tel:+529999446342">99 9944 6342</a>
+                                    </div>
+                                </div>
+                                <div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="blq_center">
+                                        <h4>FILIALES</h4>
+                                        <ul>
+                                            <li><a href="https://www.mgttravel.tur.ar/" target="_blank">Buenos Aires, Argentina</a></li>
+                                            <li><a href="https://www.megatravel.co/" target="_blank">Bogotá, Colombia</a></li>
+                                            <li><a href="https://megatravelfr.com/" target="_blank">París, Francia</a></li>
+                                            <li><a href="https://megatravel.com.tr/" target="_blank">Estambul, Turquía</a></li>
+                                            <li><a href="https://www.megatravel.pa/" target="_blank">Panamá, Panamá</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="d-xl-none col-lg-4 col-md-4 col-sm-6 col-12">
+                                    <div class="blq_center">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //row -->
+                        </div>
+                        <!-- //container -->
+                    </div>
+                    <!-- // bloque destinos -->
+                </div>
+                <!--// row  -->
+                <!-- row  -->
+
+                <div class="row align-items-start justify-content-md-center" id="footer_blq2">
+                    <!-- horario -->
+                    <div class="col-xl-2 col-lg-12 col-md-12 col-sm-12 col-12 text-left cont_redes_soc">
+                        <div id="show_redes_soc2">
+                            <img class="img-fluid logo_f" src="" width="195" height="81" alt="Mega Travel">
+                            <div class="blqred">
+                                Horario de servcio<br> Lun-Vie: 9am - 7pm<br> Sábados: 10am - 2pm<br>
+                                <a href="mailto:&#105;&#110;&#102;&#111;&#64;&#109;&#101;&#103;&#97;&#116;&#114;&#97;&#118;&#101;&#108;&#46;&#99;&#111;&#109;&#46;&#109;&#120;" target="_blank">info@megatravel.com.mx</a>
+
+                            </div><br>
+                            <ul>
+                                <li>
+                                    <a href="https://www.facebook.com" target="_blank"><img class="lazyload" data-src="https://www.megatravel.com.mx//img/elements/footer/facebook.png" alt="Facebook Mega Travel"></a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com target=" _blank="_blank"><img class="lazyload " data-src="https://www.megatravel.com.mx//img/elements/footer/twitter.png " alt="Twitter Mega Travel "></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com " target="_blank "><img class="lazyload " data-src="https://www.megatravel.com.mx//img/elements/footer/instagram.png " alt="Instagram Mega Travel "></a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com " target="_blank "><img class="lazyload " data-src="https://www.megatravel.com.mx//img/elements/footer/youtube.png " alt="Youtube Mega Travel "></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- bloque destinos -->
+                    <div class="col-xl-10 col-lg-12 col-md-12 col-sm-12 col-12 " class="cont_destinos ">
+                        <div class="container ">
+                            <div class="row align-items-start justify-content-md-center ">
+
+
+
+                                <div class="col-12 ">
+                                    <div>
+                                        <h5>Programacion <span>WEB</span></h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 " id="cont_copy "> © Programacion Web Brenda Rodriguez
+                                    <a href="https://www.meca.mx/ " target="_blank ">
+                                        <img class="img-fluid lazyload " data-src=" " alt="Meca Agencia Digital "> Agencia de viajes
+                                    </a>
+                                </div>
+                                <!-- //row -->
+                            </div>
+                            <!-- //container -->
+                        </div>
+                        <!-- // bloque destinos -->
+                    </div>
+                    <!--// row -->
+                    <!-- row  -->
+                    <div class="row align-items-start justify-content-md-center " id="footer_blq3 ">
+                        <!-- copy -->
+
+                    </div>
+                </div>
+
+
+
+
+                <!--// row  -->
+            </div>
+            <!-- //Footer -->
+        </div>
+        <!-- // row  -->
+    </div>
+    <!-- //container-fluid -->
+
+
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="registrar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="registrar-form">
+                        <div class="form-group">
+                            <input type="text" id="registrar-email" class="form-control" placeholder="Email" required>
+                            <br>
+                            <input type="password" id="registrar-password" class="form-control" placeholder="Password" required>
+                            <br>
+                            <button type="submit" class="btn btn-primary">Registrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="ingresar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="ingresar-form">
+                        <div class="form-group">
+                            <input type="text" id="ingresar-email" class="form-control" placeholder="Email" required>
+                            <br>
+                            <input type="password" id="ingresar-password" class="form-control" placeholder="Password" required>
+                            <br>
+                            <button type="submit" class="btn btn-primary btn-block my-2">Ingresar</button>
+                            <button type="button" class="btn btn-primary btn-block my-2" id="google">google</button>
+                            <button type="button" class="btn btn-primary btn-block" id="face">Facebook</button>
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-firestore.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+    <!-- 
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCD4jHJR_gK_PMPHfeaEuw9KHygZD67rLc",
+            authDomain: "agencia-a7af7.firebaseapp.com",
+            projectId: "agencia-a7af7",
+            storageBucket: "agencia-a7af7.appspot.com",
+            messagingSenderId: "676244264288",
+            appId: "1:676244264288:web:d9a58fe59dbb7949a8ba05"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+    </script>
+-->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBLyhuqm6861AKtrttehGlGjn5YFuKwNVk",
+            authDomain: "brend-5e938.firebaseapp.com",
+            projectId: "brend-5e938",
+            storageBucket: "brend-5e938.appspot.com",
+            messagingSenderId: "512612722909",
+            appId: "1:512612722909:web:70e04d6c95e13c5a259334"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const db = firebase.firestore();
+    </script>
+
+
+
+    <script type="text/javascript " src="js/main.js"></script>
+
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js "></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="https://www.megatravel.com.mx/js/base-app.js "></script>
+    <script type="text/javascript " src="https://www.megatravel.com.mx/js/chat.js "></script>
+    <!--<script type="text/javascript " src="https://www.megatravel.com.mx/js/jquery.ui.touch-punch.min.js "></script>-->
+
+    <script type="text/javascript " src="js/app.js "></script>
+
+
+
+    <script>
+    </script>
+</body>
+
+</html>

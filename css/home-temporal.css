@@ -1,0 +1,40 @@
+.icons.icon-tempmovile2 {
+    width: 42px;
+    height: 42px;
+    margin-right: 11px;
+    background-position: -298px -102px;
+    vertical-align: top
+}
+
+.navtemp2 {
+    display: none!important
+}
+
+#cont_unete_blq_green {
+    font-family: Arimo, sans-serif;
+    margin-top: 0;
+    min-height: 215px;
+    background-image: linear-gradient(100deg, #000000, #1546a0);
+    position: relative;
+}
+
+@media screen and (max-width: 768px) {
+    .navtemp2 {
+        border-bottom: none!important;
+        background-color: #b3000c;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #fff!important;
+        display: block!important
+    }
+    .navtemp2:hover {
+        background-color: #00b32c
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .ir-arriba {
+        bottom: 80px!important;
+        right: 20px;
+    }
+}
